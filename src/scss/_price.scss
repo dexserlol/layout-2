@@ -1,0 +1,126 @@
+.section {
+    // .section__price
+    &__price {
+        padding-top: 131px;
+    }
+}
+
+.container-price {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.packages {
+    max-width: 457px;
+    width: 100%;
+    text-align: center;
+    // .packages__badges
+    &__badges {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.785714px;
+        padding: 9px 45px 8px 46px;
+        color: #EC615B;
+        background: #FFEDEC;
+        border-radius: 16px;
+    }
+    // .packages__title
+    &__title {
+        margin-top: 15px;
+    }
+    // .packages__text
+    &__text {
+        margin-top: 10px;
+    }
+}
+
+.price {
+    margin-top: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    @media (max-width: $breakpoint992){
+        flex-wrap: wrap;
+    }
+    // .price__item
+    &__item {
+        flex: 0 1 30%;
+        @media (max-width: $breakpoint992){
+            flex: 0 1 100%;
+            margin-top: 30px;
+        }
+    }
+    // .price__size
+    &__size {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.6px;
+        color: $mainColor;
+        &.medium {
+            color: #EC615B;
+        }
+    }
+    // .price__number
+    &__number {
+        margin-top: 36px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 75px;
+        text-align: center;
+        letter-spacing: 2.25px;
+        color: $mainFontColor;
+    }
+    // .price__bonus
+    &__bonus {
+        margin-top: 39px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    // .price__bonus-item
+    &__bonus-item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 0.6px;
+        color: $secondFontColor;
+    }
+    &__btn {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 15px 110px 15px 111px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1.07143px;
+        color: $mainColor;
+        background: #EDF3FF;
+        border-radius: 4px;
+        transition: .3s all;
+        &.medium {
+            color: #EC615B;
+            background: #FFEDEC;
+            &:hover {
+                background: darken($color: #FFEDEC, $amount: 15);
+                color: darken($color: #EC615B, $amount: 20);
+            }
+        }
+        &:hover {
+            background: darken($color: #EDF3FF, $amount: 15);
+            color: darken($color: $mainColor, $amount: 20);
+        }
+    }
+}

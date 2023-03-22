@@ -1,0 +1,84 @@
+.section {
+    // .section__app
+    &__app {
+        margin-top: 130px;
+        width: 100%;
+        padding: 130px;
+        background: #F7FAFD;
+        @media (max-width: $breakpoint992){
+            padding: 50px;
+        }
+    }
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__item {
+        max-width: 470px;
+    }
+}
+
+.btns-link {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    @media (max-width: $breakpoint992){
+        flex-wrap: wrap;
+    }
+}
+.btn-app {
+    background: $mainColor;
+    display: flex;
+    max-width: 190px;
+    border-radius: 27px;
+    padding: 7px 25px;
+    align-items: center;
+    gap: 10px;
+    transition: .3s all;
+    // .btn__ios
+    &__ios {
+        @media (max-width: $breakpoint768){
+            flex: 0 1 100%;
+        }
+    }
+    // .btn__text
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+    // .btn__subtitle
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.423529px;
+    }
+    // .btn__store
+    &__store {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+    // .btn__android
+    &__android {
+        @media (max-width: $breakpoint768){
+            flex: 0 1 100%;
+        }
+    }
+}
+
